@@ -6,6 +6,11 @@ function setFormMessage(formElement, type, message) {
     messageElement.add (`form_message-${type}`);
 }
 
+function setInputError(inputElement, message) {
+    inputElement.classList.add("form_input-error");
+    inputElement.parentElement.querySelector("form_input-error-message").textContent = message;
+}
+
 setFormMessage(loginForm, "success", "You're logged in!");
 
 document.addEventListener("DOMContentLoaded", e=>{
