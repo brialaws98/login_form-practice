@@ -57,3 +57,7 @@ body{
 .form_message-error{
     color: var(--color-error);
 }
+
+.form_input-group{
+    margin-bottom: 1rem;
+}
