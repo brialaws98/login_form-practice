@@ -108,3 +108,16 @@ body{
 .form_button:active{
     transform: scale(0.98);
 }
+
+.form_text{
+    text-align: center;
+}
+
+.form_link{
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+.form_link:hover{
+    text-decoration: underline;
+}
