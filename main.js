@@ -36,4 +36,12 @@ loginForm.addEventListener("submit", e=> {
 
     setFormMessage(loginForm, "error", "Invalid username/password combination");
 });
-})
+
+document.querySelectorAll(".form_input")forEach(inputElement => {
+    inputElement.addEventListener("blur", e =>{
+        if(e.target.id === "signUpUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
+            setInputError(inputElement, "Username must be at least 10 characters in length");
+        }
+    });
+});
+});
