@@ -105,3 +105,6 @@ body{
 .form_button:hover{
     background: var(--color-primary-dark);
 }
+.form_button:active{
+    transform: scale(0.98);
+}
