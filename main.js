@@ -1,3 +1,7 @@
+function setFormMessage(formElement, type, message) {
+    const messageElement = formElement.querySelector(".form_message");
+}
+
 document.addEventListener("DOMContentLoaded", e=>{
     const loginForm = document.querySelector("#login");
     const createAccountForm =document.querySelector("#createAccount");
