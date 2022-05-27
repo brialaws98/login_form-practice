@@ -31,3 +31,11 @@ body{
 .form_button{
     font: 500 1rem 'Macondo', cursive;
 }
+
+.form > *:first-child{
+    margin-top: 0;
+}
+
+.form >*:last-child{
+  margin-top: 0;
+}
