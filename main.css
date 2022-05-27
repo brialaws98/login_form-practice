@@ -73,3 +73,8 @@ body{
     background: #eeee;
     transition: background 0.2s, border-color 0.2s;
 }
+
+.form_input:focus{
+    border-color: var(--color-primary);
+    background: #fff;
+}
