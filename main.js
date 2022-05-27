@@ -11,6 +11,11 @@ function setInputError(inputElement, message) {
     inputElement.parentElement.querySelector("form_input-error-message").textContent = message;
 }
 
+function clearInputError(inputElement) {
+    inputElement.cleassList.remove("form_input-error");
+    inputElement.parentElement.querySelector(".form_inut-error-message").textContent = "";
+}
+
 setFormMessage(loginForm, "success", "You're logged in!");
 
 document.addEventListener("DOMContentLoaded", e=>{
@@ -42,6 +47,10 @@ document.querySelectorAll(".form_input").forEach(inputElement => {
         if(e.target.id === "signUpUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
             setInputError(inputElement, "Username must be at least 10 characters in length");
         }
+    });
+
+    inputElement.addEventListener("input", e => {
+        clearInputError(inputElement); 
     });
 });
 });
