@@ -90,3 +90,18 @@ body{
     color: var(--color-error);
 }
 
+.form_button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color:#ffff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+.form_button:hover{
+    background: var(--color-primary-dark);
+}
