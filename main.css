@@ -25,3 +25,9 @@ body{
     border-radius: var(--border-radius);
     background: #fff;
 }
+
+.container 
+.form_input
+.form_button{
+    font: 500 1rem 'Macondo', cursive;
+}
