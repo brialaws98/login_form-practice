@@ -3,7 +3,7 @@ function setFormMessage(formElement, type, message) {
 
     messageElement.textContent = message;
     messageElement.classList.remove("form_message-success", "form_message-error");
-    messageElement.add (`form_message-${type}`);
+    messageElement.classList.add (`.form_message-${type}`);
 }
 
 function setInputError(inputElement, message) {
@@ -12,15 +12,15 @@ function setInputError(inputElement, message) {
 }
 
 function clearInputError(inputElement) {
-    inputElement.cleassList.remove("form_input-error");
-    inputElement.parentElement.querySelector(".form_inut-error-message").textContent = "";
+    inputElement.classList.remove("form_input-error");
+    inputElement.parentElement.querySelector(".form_input-error-message").textContent = "";
 }
 
 setFormMessage(loginForm, "success", "You're logged in!");
 
 document.addEventListener("DOMContentLoaded", e=>{
     const loginForm = document.querySelector("#login");
-    const createAccountForm =document.querySelector("#createAccount");
+    const createAccountForm = document.querySelector("#createAccount");
 
     document.querySelector("#linkCreateAccount").addEventListener("click", e => {
         e.preventDefault();
