@@ -1,6 +1,12 @@
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form_message");
+
+    messageElement.textContent = message;
+    messageElement.classList.remove("form_message-success", "form_message-error");
+    messageElement.add (`form_message-${type}`);
 }
+
+setFormMessage(loginForm, "success", "You're logged in!");
 
 document.addEventListener("DOMContentLoaded", e=>{
     const loginForm = document.querySelector("#login");
